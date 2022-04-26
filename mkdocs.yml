@@ -1,0 +1,90 @@
+site_name: Tistro Guideline
+site_url: https://example.com/
+
+plugins:
+  - search:
+      lang: en
+
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Roboto
+    size: 12
+  favicon: favicon.ico
+  icon:
+    logo: bootstrap/image2vector
+  features:  
+    - navigation.indexes
+    - navigation.top
+    - navigation.sticky
+    - navigation.tabs.sticky
+
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      toggle:
+        icon: material/eye-outline
+        name: Switch to dark mode
+      primary: blue
+      accent: blue
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      toggle:
+        icon: material/eye
+        name: Switch to light mode
+      primary: blue
+      accent: blue
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - footnotes
+  - meta
+  - lightgallery
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+extra_css:
+  - stylesheets/extra.css
+
+nav: 
+  - Introduction: 'index.md'
+  - Tutorial: 'tutorial/tutorial-home.md'
+  - Features:
+    - Analytics:
+      - Overview: 'categories/analytics/overview.md'
+      - Application Usage: 'categories/analytics/application-usage.md'
+      - Device Activity: 'categories/analytics/device-activity.md'
+      - Department Activity: 'categories/analytics/department-activity.md'
+      - Group Activity: 'categories/analytics/group-activity.md'
+      - Department Performance: 'categories/analytics/department-performance.md'
+      - Keyword Report: 'categories/analytics/keyword-report.md'
+    - User Reports:
+      - Overview: 'categories/user-reports/overview.md'
+      - Timeline: 'categories/user-reports/timeline.md'
+      - Application Usage: 'categories/user-reports/application-usage.md'
+      - Device Activity: 'categories/user-reports/device-activity.md'
+      - Department Performance: 'categories/user-reports/department-performance.md'
+    - Devices:
+      - Logger Settings: 'categories/devices/logger-settings.md'
+    - Settings:
+      - RAG Status: 'categories/settings/rag-status.md'
+      - Application Categories: 'categories/settings/application-categories.md'
+      - Internet Categories: 'categories/settings/internet-categories.md'
+      - Manage My Profile: 'categories/settings/manage-my-profile.md'
+    - Membership:
+      - Manage User Accounts: 'categories/membership/manage-user-accounts.md'
+      - Manage Devices: 'categories/membership/manage-devices.md'
+      - Manage Company Division: 'categories/membership/manage-company-division.md'
+    # - Reports:
+  - FAQ: 'FAQ/faq-home.md'
+  - Brochures: 
+  - Developer Docs: 'developer-docs/dev-notes.md'
