@@ -40,6 +40,8 @@ The graph will display additional information regarding registered departments.
 
 ![!Graph](../../screenshots/analytics/departmentActivity/graph2.png){ loading=lazy  }
 
+The key data elements are broken down and explained at the top of the graph.
+
 - #### Total Profiles
 The total number of profiles present within the selected time period.
 
